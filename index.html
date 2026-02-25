@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolyo | Ayşe Ceren Şenel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        peach: { 50: '#fffcf9', 100: '#fff5f0', 200: '#ffd9cc', 500: '#ff9c80', 600: '#f27c5e' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-peach-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 transition-colors duration-500 overflow-hidden">
+
+    <div class="fixed top-6 right-6 z-[110] flex items-center gap-4">
+        <button onclick="toggleDarkMode()" class="theme-toggle px-3 py-1.5 rounded-full bg-white dark:bg-zinc-800 border border-peach-200 dark:border-zinc-700 shadow-sm text-[10px] font-bold shrink-0">
+            <span class="dark:hidden">🌙 Dark</span>
+            <span class="hidden dark:block text-peach-500">☀️ Light</span>
+        </button>
+        <div class="flex gap-1.5">
+            <button onclick="setLanguage('tr')" class="lang-btn active" id="btn-tr">TR</button>
+            <button onclick="setLanguage('en')" class="lang-btn" id="btn-en">EN</button>
+        </div>
+    </div>
+
+    <div id="splash-screen" class="fixed inset-0 z-[100] bg-peach-50 dark:bg-zinc-900 flex items-center justify-center transition-transform duration-1000">
+        <div class="text-center p-8 max-w-2xl">
+            <div id="character-container" class="relative flex flex-col items-center justify-center mb-10">
+                <div class="character-face bg-peach-500 w-32 h-32 rounded-[2.5rem] shadow-2xl flex flex-col items-center justify-center gap-4 transition-all duration-300">
+                    <div class="flex gap-4">
+                        <div class="eye bg-white w-8 h-8 rounded-full flex items-center justify-center relative"><div class="pupil"></div></div>
+                        <div class="eye bg-white w-8 h-8 rounded-full flex items-center justify-center relative"><div class="pupil"></div></div>
+                    </div>
+                    <div id="mouth"></div>
+                </div>
+            </div>
+            <h1 class="text-4xl font-extrabold mb-2 dark:text-white text-zinc-900 uppercase tracking-tight">Ayşe Ceren Şenel</h1>
+            <p id="splash-tag" class="text-peach-600 dark:text-peach-200 font-mono mb-4 text-sm uppercase tracking-widest font-bold"></p>
+            <p id="splash-bio" class="text-zinc-500 dark:text-zinc-400 text-sm italic mb-10 px-4"></p>
+            <button id="unlock-btn" onclick="unlockPortfolio()" onmouseenter="startExcitement()" onmouseleave="stopExcitement()"
+                class="group flex items-center gap-3 mx-auto bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 px-10 py-4 rounded-full font-bold hover:bg-peach-500 hover:text-white transition-all shadow-2xl relative z-10">
+                <span id="btn-unlock-text"></span> <span>→</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="main-content" class="h-screen flex flex-col opacity-0 transition-opacity duration-500">
+        <nav class="bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-b border-peach-100 dark:border-zinc-800 sticky top-0 z-50 px-6 h-16 flex items-center">
+            <div class="max-w-6xl mx-auto w-full flex items-center gap-4">
+                <button onclick="showView('home')" class="flex items-center gap-2 text-peach-600 dark:text-peach-500 font-black text-sm hover:scale-105 transition shrink-0">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+                    <span id="nav-home"></span>
+                </button>
+                <div class="flex items-center gap-4 text-[10px] font-black tracking-widest text-zinc-400 border-l border-peach-200 dark:border-zinc-700 pl-4 h-full">
+                    <button onclick="showView('projects')" id="nav-projects" class="hover:text-peach-600 whitespace-nowrap uppercase"></button>
+                    <button onclick="showView('certs')" id="nav-certs" class="hover:text-peach-600 whitespace-nowrap uppercase"></button>
+                    <button onclick="showView('experience')" id="nav-experience" class="hover:text-peach-600 whitespace-nowrap uppercase"></button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="flex-1 overflow-y-auto">
+            <div id="view-home" class="view-content active p-8 max-w-6xl mx-auto space-y-16">
+                <header class="py-8 border-b border-peach-100 dark:border-zinc-800">
+                    <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                        <div class="w-36 h-36 md:w-44 md:h-44 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white shrink-0">
+                            <img src="profil.jpg" alt="Profil" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 space-y-4 text-center md:text-left">
+                            <div id="user-tag" class="inline-block px-3 py-1 bg-peach-100 dark:bg-peach-900/30 text-peach-600 rounded-full text-[9px] font-bold uppercase"></div>
+                            <h2 class="text-3xl md:text-5xl font-black tracking-tighter">Ayşe Ceren Şenel</h2>
+                            <p id="user-bio" class="text-lg text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-2xl"></p>
+                            <div class="flex flex-wrap gap-3 pt-4 justify-center md:justify-start">
+                                <a id="linkedin-btn" href="#" target="_blank" class="flex items-center gap-2 bg-[#0077b5] text-white px-5 py-2.5 rounded-xl font-bold shadow-md hover:opacity-90 transition text-sm">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                    <span id="label-contact"></span>
+                                </a>
+                                <a id="github-link" href="#" target="_blank" class="flex items-center gap-2 bg-zinc-900 text-white px-5 py-2.5 rounded-xl font-bold shadow-md hover:bg-zinc-800 transition text-sm">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57 4.77-1.587 8.207-6.085 8.207-11.387 0-6.627-5.373-12-12-12z"/></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <button onclick="downloadCV()" id="cv-btn" class="bg-white dark:bg-zinc-800 border border-peach-200 dark:border-zinc-700 px-5 py-2.5 rounded-xl font-bold shadow-sm hover:bg-peach-50 transition text-sm"></button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="space-y-12">
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div class="space-y-6"><h3 id="home-title-proj" class="text-xl font-black text-peach-600"></h3><div id="home-proj-feed" class="space-y-3"></div></div>
+                        <div class="space-y-6"><h3 id="home-title-cert" class="text-xl font-black text-peach-600"></h3><div id="home-cert-feed" class="space-y-3"></div></div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-12 pt-12 border-t border-peach-100 dark:border-zinc-800">
+                        <div class="space-y-6"><h3 id="home-title-edu" class="text-xl font-black text-peach-600"></h3><div id="home-edu-feed" class="space-y-3"></div></div>
+                        <div class="space-y-6"><h3 id="home-title-exp" class="text-xl font-black text-peach-600"></h3><div id="home-exp-feed" class="space-y-3"></div></div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="view-projects" class="view-content hidden p-8 max-w-6xl mx-auto"><h2 id="title-projects-full" class="text-3xl font-black mb-10"></h2><div id="full-projects-list" class="grid md:grid-cols-2 gap-8"></div></div>
+            <div id="view-certs" class="view-content hidden p-8 max-w-6xl mx-auto"><h2 id="title-certs-full" class="text-3xl font-black mb-10"></h2><div id="full-certs-list" class="grid sm:grid-cols-2 md:grid-cols-3 gap-6"></div></div>
+            <div id="view-experience" class="view-content hidden p-8 max-w-6xl mx-auto"><h2 id="title-experience-full" class="text-3xl font-black mb-10"></h2><div id="full-experience-list" class="space-y-10 max-w-3xl"></div></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
