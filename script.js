@@ -1,22 +1,69 @@
 const PORTFOLIO_DATA = {
     tr: {
         tag: "Bilgisayar Mühendisi",
-        bio: "Ankara Üniversitesi Bilgisayar Mühendisliği öğrencisi olarak Python, C, Java ve SQL dillerinde güçlü bir yazılım geliştirme temeline sahibim. Eğitimim boyunca veri yapıları, algoritmalar ve makine öğrenimi konularında kapsamlı çalışmalar yürüttüm.",
-        splashBio: "Ankara Üniversitesi Bilgisayar Mühendisliği öğrencisi. Yazılım geliştirme ve makine öğrenimine ilgi duyuyorum.",
-        nav: { home: "ANASAYFA", projects: "Projeler", certs: "Sertifikalar", exp: "Deneyim" },
-        titles: { homeProj: "Son Projeler", homeCert: "Sertifikalar", homeEdu: "Eğitim", homeExp: "Deneyim", fullProj: "Proje Portfolyosu", fullCerts: "Tüm Sertifikalar", fullExp: "Kariyer Yolculuğu" },
+        bio: "Ankara Üniversitesi Bilgisayar Mühendisliği eğitimim boyunca Python, Java, C ve SQL üzerinde güçlü bir temel oluşturdum; veri yapıları, algoritmalar, makine öğrenmesi, yapay zekâ, veri analitiği ve yazılım mimarisi alanlarında hem teorik hem de uygulamalı çalışmalar gerçekleştirdim.\n" + 
+            "Hedefim, analitik düşünme ve problem çözme becerilerimi kullanarak savunma sanayii için katma değer üretmektir. ",
+        
+        splashBio: "Ankara Üniversitesi Bilgisayar Mühendisliği eğitimim ve projelerimle, savunma sanayiinde yerli ve milli teknolojiler geliştirmeye odaklanan bir mühendis adayıyım.",
+        nav: { home: "ANASAYFA", projects: "Projeler", certs: "Sertifikalar", exp: "Deneyimler" },
+        titles: { homeProj: "Son Projeler", homeCert: "Son Sertifikalar", homeEdu: "Eğitim", homeExp: "Son Deneyimler", fullProj: "Tüm Projeler", fullCerts: "Tüm Sertifikalar", fullExp: "Tüm Deneyimler" },
         btns: { unlock: "Beni Tanı", contact: "İletişime Geç", cv: "CV İndir", download: "PDF İNDİR" },
-        cvFile: "cv türkçe 16.02.2026.pdf",
-        projects: [{ title: "Yapay Zekâ Destekli Kan Tahlili Analizi", shortDesc: "TÜBİTAK 2209-A prototipi.", longDesc: "Doğal Dil İşleme ve makine öğrenmesi yöntemleri ile %85 üzeri doğruluk sağlanmıştır.", tech: ["Python", "NLP", "Machine Learning"] }],
+        cvFile: "cv Türkçe 02.04.2026.pdf",
+        projects: [
+            {
+                title: "Havacılıkta Yapay Zekâ TEKNOFEST Yarışması",
+                shortDesc: "Takım Kaptanı, Ocak 2026 - Devam Ediyor",
+                longDesc: "Ekip koordinasyonu ve model geliştirme süreçlerine liderlik edilmektedir.",
+                tech: ["Python", "Makine Öğrenmesi", "Takım Liderliği"]
+            },
+            {
+                title: "Madencilik Teknolojileri TEKNOFEST Yarışması",
+                shortDesc: "Üye, Ocak 2026 - Devam Ediyor",
+                longDesc: "Sensör tabanlı veri analizi ve erken uyarı sistemleri (gaz yoğunluğu risk tespiti) üzerinde çalışılmaktadır.",
+                tech: ["Python", "Veri Analizi", "Sensörler"]
+            },
+            {
+                title: "Yapay Zekâ Destekli Kan Tahlili Analizi TÜBİTAK 2209-A prototipi",
+                shortDesc: "Proje Sahibi ve Yürütücü, Eylül 2025 - Devam Ediyor",
+                longDesc: "Doğal Dil İşleme ve makine öğrenmesi yöntemleri ile %85 üzeri doğruluk sağlanmıştır.",
+                tech: ["Python", "NLP", "Makine Öğrenmesi"]
+            }
+            ],
         experience: [
-            { role: "Yazman", company: "HSD Ankara", date: "Eylül 2025 - Devam", details: "Topluluk içi iletişim ve dökümantasyon süreçleri." },
-            { role: "Organizasyon Sorumlusu", company: "HSD Ankara", date: "2025", details: "Topluluk etkinliklerinin koordinasyonu." }
+            {
+                role: "Yazılım Geliştirme Stajyeri",
+                company: "Uçak Yazılım",
+                date: "Ocak 2026 - Şubat 2026",
+                details: "Finans ve İK veri setleri için makine öğrenmesi tabanlı karar destek sistemi geliştirilmiştir. Flask tabanlı web uygulaması ile otomatik özellik çıkarımı ve PDF rapor üretimi sağlanmıştır. Doğrusal ve Lojistik Regresyon ile %91 doğruluk elde edilmiştir. Ollama3 (LLM) entegrasyonu ile model çıktıları yorumlanmıştır."
+            },
+            {
+                role: "Sosyal Medya Elçisi",
+                company: "HSD Ankara",
+                date: "Şubat 2026 - Devam Ediyor",
+                details: "Topluluk hesaplarının yönetimi ve içerik stratejisi yürütülmektedir."
+            },
+            {
+                role: "Yazman",
+                company: "HSD Ankara",
+                date: "Eylül 2025 - Şubat 2026",
+                details: "Dokümantasyon ve topluluk içi iletişim süreçlerinden sorumludur."
+            },
+            {
+                role: "Organizasyon ve Prime Ekip Sorumlusu",
+                company: "HSD Ankara",
+                date: "Mart 2025 - Kasım 2025",
+                details: "Etkinlik planlama ve ekip koordinasyonu sağlanmıştır."
+            }
         ],
         education: [
-            { school: "Ankara Üniversitesi", degree: "Bilgisayar Mühendisliği", date: "2023 - Devam", grade: "GNO: 2.51" },
+            { school: "Ankara Üniversitesi", degree: "Bilgisayar Mühendisliği", date: "2023 - Devam", grade: "GNO: 2.91" },
             { school: "Meram Anadolu Lisesi", degree: "Lise Mezuniyeti", date: "2018 - 2022", grade: "Not: 96.69" }
         ],
         certs: [
+            { name: "HCIA-AI V4.0 Course: Yapay Zeka Temelleri ve Uygulamaları", issuer: "Huawei ICT Academy", date: "2026", pdf: "HCIA-AI V4.0 Course.pdf" },
+            { name: "HCIA-Cloud Computing V5.5 Course: Bulut Bilişim Teknolojileri ve Sanallaştırma", issuer: "Huawei ICT Academy", date: "2026", pdf: "HCIA-Cloud Computing V5.5 Course.pdf" },
+            { name: "HCCDA-Tech Essentials Course: Bulut Geliştirici ve Temel Teknoloji Esasları", issuer: "Huawei ICT Academy", date: "2026", pdf: "HCCDA-Tech Essentials Course.pdf" },
+            { name: "KAPSÜL+ 3. Bölüm Programı Katılım Belgesi", issuer: "T.C. Cumhurbaşkanlığı Savunma Sanayii Başkanlığı Savunma Sanayii Akademi", date: "2026", pdf: "kapsül-3-sertifika.pdf" },
             { name: "Makine Öğrenmesi", issuer: "BTK Akademi", date: "2025", pdf: "BTK Makine Öğrenmesi.pdf" },
             { name: "Derin Öğrenmeye Giriş", issuer: "BTK Akademi", date: "2025", pdf: "BTK Derin Öğrenmeye Giriş.pdf" },
             { name: "Doğal Dil İşleme", issuer: "BTK Akademi", date: "2025", pdf: "BTK Doğa Dil İşleme.pdf" },
@@ -27,28 +74,75 @@ const PORTFOLIO_DATA = {
     },
     en: {
         tag: "Computer Engineer",
-        bio: "As a Computer Engineering student at Ankara University, I have a strong foundation in Python, C, Java, and SQL. Experienced in data structures, algorithms, and AI.",
-        splashBio: "Computer Engineering student at Ankara University. Interested in software development and AI.",
-        nav: { home: "HOME", projects: "Projects", certs: "Certificates", exp: "Experience" },
-        titles: { homeProj: "Recent Projects", homeCert: "Certificates", homeEdu: "Education", homeExp: "Experience", fullProj: "Project Portfolio", fullCerts: "Certifications", fullExp: "Career Journey" },
+        bio: "During my Computer Engineering studies at Ankara University, I have built a strong foundation in Python, Java, C, and SQL. I have gained both theoretical and practical experience in data structures, algorithms, machine learning, AI, data analytics, and software architecture.\n" +
+            "My goal is to apply my analytical thinking and problem-solving skills to contribute value in the defense industry.",
+        splashBio: "As a Computer Engineering student at Ankara University, I am a prospective engineer focused on developing domestic and national technologies for the defense industry.",
+        nav: { home: "HOME", projects: "Projects", certs: "Certificates", exp: "Experiences" },
+        titles: { homeProj: "Recent Projects", homeCert: "Recent Certificates", homeEdu: "Education", homeExp: "Recent Experiences", fullProj: "All Projects", fullCerts: "All Certificates", fullExp: "All Experiences" },
         btns: { unlock: "Know Me", contact: "Contact Me", cv: "Download CV", download: "DOWNLOAD PDF" },
-        cvFile: "cv english 16.02.2026.pdf",
-        projects: [{ title: "AI-Powered Blood Test Analysis", shortDesc: "TÜBİTAK 2209-A prototype.", longDesc: "Developed using NLP and machine learning with >85% accuracy.", tech: ["Python", "NLP", "Machine Learning"] }],
+        cvFile: "cv English 02.04.2026.pdf",
+        projects: [
+            {
+                title: "AI in Aviation TEKNOFEST Competition",
+                shortDesc: "Team Leader, January 2026 - Present",
+                longDesc: "Leading team coordination and model development processes.",
+                tech: ["Python", "Machine Learning", "Team Leadership"]
+            },
+            {
+                title: "Mining Technologies TEKNOFESTCompetition",
+                shortDesc: "Member, January 2026 - Present",
+                longDesc: "Working on sensor-based data analysis and early warning systems (gas density risk detection).",
+                tech: ["Python", "Data Analysis", "Sensors"]
+            },
+            {
+                title: "AI-Powered Blood Test Analysis TÜBİTAK 2209-A prototype",
+                shortDesc: "Project Owner and Lead, September 2025 - Present",
+                longDesc: "Developed using NLP and machine learning with >85% accuracy.",
+                tech: ["Python", "NLP", "Machine Learning"]
+            }
+            ],
         experience: [
-            { role: "Secretary", company: "HSD Ankara", date: "2025 - Present", details: "Communication and documentation lead." },
-            { role: "Organization Lead", company: "HSD Ankara", date: "2025", details: "Managed events and team coordination." }
+            {
+                role: "Software Development Intern",
+                company: "Uçak Software",
+                date: "January 2026 - February 2026",
+                details: "Developed an ML-based decision support system for finance and HR datasets. Built Flask web app with automatic feature extraction and PDF reports. Achieved 91% accuracy with Linear & Logistic Regression. Integrated Ollama3 (LLM) for model output interpretation."
+            },
+            {
+                role: "Social Media Ambassador",
+                company: "HSD Ankara",
+                date: "February 2026 - Present",
+                details: "Managing community accounts and content strategy."
+            },
+            {
+                role: "Secretary",
+                company: "HSD Ankara",
+                date: "September 2025 - February 2026",
+                details: "Responsible for documentation and internal communications."
+            },
+            {
+                role: "Organization & Prime Team Lead",
+                company: "HSD Ankara",
+                date: "March 2025 - November 2025",
+                details: "Event planning and team coordination."
+            }
         ],
         education: [
-            { school: "Ankara University", degree: "Computer Engineering", date: "2023 - Present", grade: "GPA: 2.51" },
+            { school: "Ankara University", degree: "Computer Engineering", date: "2023 - Present", grade: "GPA: 2.91" },
             { school: "High School", degree: "Meram Anatolian High School", date: "2018 - 2022", grade: "GPA: 96.69" }
         ],
         certs: [
+            { name: "HCIA-AI V4.0 Course: Fundamentals and Applications of Artificial Intelligence", issuer: "Huawei ICT Academy", date: "2026", pdf: "HCIA-AI V4.0 Course.pdf" },
+            { name: "HCIA-Cloud Computing V5.5 Course: Cloud Computing Technologies and Virtualization", issuer: "Huawei ICT Academy", date: "Nisan 2026", pdf: "HCIA-Cloud Computing V5.5 Course.pdf" },
+            { name: "HCCDA-Tech Essentials Course: Cloud Developer and Fundamental Technology Essentials", issuer: "Huawei ICT Academy", date: "Nisan 2026", pdf: "HCCDA-Tech Essentials Course.pdf" },
+            { name: "KAPSÜL+ 3rd Phase Program Participation Certificate", issuer: "T.C. Cumhurbaşkanlığı Savunma Sanayii Başkanlığı Savunma Sanayii Akademi", date: "02.04.2026", pdf: "kapsül-3-sertifika.pdf" },
             { name: "Machine Learning", issuer: "BTK Academy", date: "2025", pdf: "BTK Makine Öğrenmesi.pdf" },
             { name: "Introduction to Deep Learning", issuer: "BTK Academy", date: "2025", pdf: "BTK Derin Öğrenmeye Giriş.pdf" },
             { name: "Natural Language Processing", issuer: "BTK Academy", date: "2025", pdf: "BTK Doğa Dil İşleme.pdf" },
             { name: "Network Fundamentals", issuer: "BTK Academy", date: "2025", pdf: "BTK Ağ Temelleri.pdf" },
             { name: "Ethical Hacking Bootcamp", issuer: "Udemy", date: "2025", pdf: "Udemy Ethical Hacking.pdf" },
             { name: "Algorithm 101 Training", issuer: "AUCS", date: "2023", pdf: "AUCS Algoritma 101.pdf" }
+            
         ]
     }
 };
@@ -90,13 +184,79 @@ function setLanguage(lang) {
 
 function renderDynamicContent() {
     const data = PORTFOLIO_DATA[currentLang];
-    document.getElementById('home-proj-feed').innerHTML = data.projects.map(p => `<div class="summary-card shadow-sm"><p class="font-bold text-sm text-peach-600">${p.title}</p><p class="text-[10px] opacity-60">${p.shortDesc}</p></div>`).join('');
-    document.getElementById('home-cert-feed').innerHTML = data.certs.slice(0, 3).map(c => `<div class="summary-card shadow-sm"><p class="font-bold text-sm text-peach-600">${c.name}</p><p class="text-[10px] font-bold uppercase opacity-60">${c.issuer}</p></div>`).join('');
-    document.getElementById('home-edu-feed').innerHTML = data.education.map(e => `<div class="summary-card shadow-sm"><p class="font-bold text-sm text-peach-600">${e.school}</p><p class="text-[10px] opacity-60">${e.degree}</p></div>`).join('');
-    document.getElementById('home-exp-feed').innerHTML = data.experience.map(exp => `<div class="summary-card shadow-sm"><p class="font-bold text-sm text-peach-600">${exp.company}</p><p class="text-[10px] opacity-60">${exp.role}</p></div>`).join('');
-    document.getElementById('full-projects-list').innerHTML = data.projects.map(p => `<div class="bg-white dark:bg-zinc-900 p-8 rounded-[2.5rem] border border-peach-100 dark:border-zinc-800 shadow-xl card-hover"><h3 class="text-2xl font-black mb-4 dark:text-white">${p.title}</h3><p class="opacity-70 text-sm mb-6">${p.longDesc}</p><div class="flex gap-2">${p.tech.map(t => `<span class="bg-peach-50 dark:bg-peach-900/20 text-peach-600 rounded-lg text-[10px] font-bold px-3 py-1">${t}</span>`).join('')}</div></div>`).join('');
-    document.getElementById('full-certs-list').innerHTML = data.certs.map(c => `<div class="bg-white dark:bg-zinc-900 p-6 rounded-2xl border border-peach-100 dark:border-zinc-800 shadow-sm flex flex-col justify-between"><div><p class="font-bold text-sm leading-tight dark:text-white">${c.name}</p><p class="text-[10px] text-peach-500 font-bold mt-2 uppercase">${c.issuer}</p></div><a href="${c.pdf}" download class="mt-4 inline-block text-[9px] font-black bg-peach-50 dark:bg-peach-900/30 text-peach-600 px-4 py-2 rounded-lg text-center hover:bg-peach-500 transition">${data.btns.download}</a></div>`).join('');
-    document.getElementById('full-experience-list').innerHTML = data.experience.map(e => `<div class="relative pl-10 border-l-2 border-peach-200 dark:border-zinc-800 mb-10"><h3 class="text-xl font-black dark:text-white">${e.role}</h3><p class="text-peach-500 font-bold text-xs uppercase mb-2">${e.company} | ${e.date}</p><p class="opacity-70 text-sm">${e.details}</p></div>`).join('');
+
+    // Son Projeler (en üstteki 4)
+    document.getElementById('home-proj-feed').innerHTML = data.projects
+        .slice(0, 4)
+        .map(p => `
+            <div class="summary-card shadow-sm">
+                <p class="font-bold text-sm text-peach-600">${p.title}</p>
+                <p class="text-[10px] opacity-60">${p.shortDesc}</p>
+            </div>
+        `).join('');
+
+    // Sertifikalar (en üstteki 4)
+    document.getElementById('home-cert-feed').innerHTML = data.certs
+        .slice(0, 4)
+        .map(c => `
+            <div class="summary-card shadow-sm">
+                <p class="font-bold text-sm text-peach-600">${c.name}</p>
+                <p class="text-[10px] font-bold uppercase opacity-60">${c.issuer}</p>
+            </div>
+        `).join('');
+
+    // Eğitim (tümünü göster)
+    document.getElementById('home-edu-feed').innerHTML = data.education
+        .map(e => `<div class="summary-card shadow-sm">
+            <p class="font-bold text-sm text-peach-600">${e.school}</p>
+            <p class="text-[10px] opacity-60">${e.degree} | ${e.grade}</p>
+        </div>
+        `).join('');
+
+    // Deneyim (en üstteki 4)
+    document.getElementById('home-exp-feed').innerHTML = data.experience
+        .slice(0, 4)
+        .map(exp => `<div class="summary-card shadow-sm">
+            <p class="font-bold text-sm text-peach-600">${exp.company}</p>
+            <p class="text-[10px] opacity-60">${exp.role} | ${exp.date}</p>
+        </div>
+        `).join('');
+
+    // Tüm Projeler
+    document.getElementById('full-projects-list').innerHTML = data.projects
+        .map(p => `
+            <div class="bg-white dark:bg-zinc-900 p-8 rounded-[2.5rem] border border-peach-100 dark:border-zinc-800 shadow-xl card-hover">
+                <h3 class="text-2xl font-black mb-4 dark:text-white">${p.title}</h3>
+                <p class="opacity-70 text-sm mb-6">${p.longDesc}</p>
+                <div class="flex gap-2">
+                    ${p.tech.map(t => `<span class="bg-peach-50 dark:bg-peach-900/20 text-peach-600 rounded-lg text-[10px] font-bold px-3 py-1">${t}</span>`).join('')}
+                </div>
+            </div>
+        `).join('');
+
+    // Tüm Sertifikalar
+    document.getElementById('full-certs-list').innerHTML = data.certs
+        .map(c => `
+            <div class="bg-white dark:bg-zinc-900 p-6 rounded-2xl border border-peach-100 dark:border-zinc-800 shadow-sm flex flex-col justify-between">
+                <div>
+                    <p class="font-bold text-sm leading-tight dark:text-white">${c.name}</p>
+                    <p class="text-[10px] text-peach-500 font-bold mt-2 uppercase">${c.issuer}</p>
+                </div>
+                <a href="${c.pdf}" download class="mt-4 inline-block text-[9px] font-black bg-peach-50 dark:bg-peach-900/30 text-peach-600 px-4 py-2 rounded-lg text-center hover:bg-peach-500 transition">
+                    ${data.btns.download}
+                </a>
+            </div>
+        `).join('');
+
+    // Tüm Deneyimler
+    document.getElementById('full-experience-list').innerHTML = data.experience
+        .map(e => `
+            <div class="relative pl-10 border-l-2 border-peach-200 dark:border-zinc-800 mb-10">
+                <h3 class="text-xl font-black dark:text-white">${e.role}</h3>
+                <p class="text-peach-500 font-bold text-xs uppercase mb-2">${e.company} | ${e.date}</p>
+                <p class="opacity-70 text-sm">${e.details}</p>
+            </div>
+        `).join('');
 }
 
 function downloadCV() {
