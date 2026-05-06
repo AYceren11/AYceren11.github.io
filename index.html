@@ -112,6 +112,16 @@
             <div id="view-experience" class="view-content hidden p-8 max-w-6xl mx-auto"><h2 id="title-experience-full" class="text-3xl font-black mb-10"></h2><div id="full-experience-list" class="space-y-10 max-w-3xl"></div></div>
         </main>
     </div>
+    <!-- Certificate Modal -->
+    <div id="cert-modal" class="fixed inset-0 z-[200] hidden flex items-center justify-center p-4 bg-zinc-950/80 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+        <div class="bg-white dark:bg-zinc-900 w-full max-w-4xl h-[85vh] rounded-[2.5rem] overflow-hidden shadow-2xl relative scale-95 transition-transform duration-300">
+            <button onclick="closeCertModal()" class="absolute top-6 right-6 z-10 bg-zinc-900/10 hover:bg-zinc-900/20 dark:bg-white/10 dark:hover:bg-white/20 p-2 rounded-full backdrop-blur-md transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <iframe id="cert-iframe" class="w-full h-full border-none"></iframe>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
