@@ -31,6 +31,12 @@ const PORTFOLIO_DATA = {
             ],
         experience: [
             {
+                role: "Yapay Zeka Birimi Stajyeri",
+                company: "T.C. Cumhurbaşkanlığı İletişim Başkanlığı",
+                date: "Nisan 2026 - Devam Ediyor",
+                details: "Yapay zekanın mevcut sistemlere ve iş akışlarına entegrasyonu üzerine çalışılmaktadır. Yapay zeka odaklı çözümlerin geliştirilmesi ve uygulanmasına destek olunmaktadır."
+            },
+            {
                 role: "Yazılım Geliştirme Stajyeri",
                 company: "Uçak Yazılım",
                 date: "Ocak 2026 - Şubat 2026",
@@ -60,6 +66,7 @@ const PORTFOLIO_DATA = {
             { school: "Meram Anadolu Lisesi", degree: "Lise Mezuniyeti", date: "2018 - 2022", grade: "Not: 96.69" }
         ],
         certs: [
+            { name: "Güdüm Sistemleri Speed Bootcamp", issuer: "Aselsan", date: "11 Nisan 2026", pdf: "güdümlü-sist-sertifika.pdf" },
             { name: "HCIA-AI V4.0 Course: Yapay Zeka Temelleri ve Uygulamaları", issuer: "Huawei ICT Academy", date: "2026", pdf: "HCIA-AI V4.0 Course.pdf" },
             { name: "HCIA-Cloud Computing V5.5 Course: Bulut Bilişim Teknolojileri ve Sanallaştırma", issuer: "Huawei ICT Academy", date: "2026", pdf: "HCIA-Cloud Computing V5.5 Course.pdf" },
             { name: "HCCDA-Tech Essentials Course: Bulut Geliştirici ve Temel Teknoloji Esasları", issuer: "Huawei ICT Academy", date: "2026", pdf: "HCCDA-Tech Essentials Course.pdf" },
@@ -103,6 +110,12 @@ const PORTFOLIO_DATA = {
             ],
         experience: [
             {
+                role: "Artificial Intelligence Unit Intern",
+                company: "Presidency of the Republic of Türkiye Directorate of Communications",
+                date: "Apr 2026 - Present",
+                details: "Working on the integration of artificial intelligence into existing systems and workflows. Assisting in the development and implementation of AI-driven solutions."
+            },
+            {
                 role: "Software Development Intern",
                 company: "Uçak Software",
                 date: "January 2026 - February 2026",
@@ -132,6 +145,7 @@ const PORTFOLIO_DATA = {
             { school: "High School", degree: "Meram Anatolian High School", date: "2018 - 2022", grade: "GPA: 96.69" }
         ],
         certs: [
+            { name: "Guidance Systems Speed Bootcamp", issuer: "Aselsan", date: "April 11, 2026", pdf: "güdümlü-sist-sertifika.pdf" },
             { name: "HCIA-AI V4.0 Course: Fundamentals and Applications of Artificial Intelligence", issuer: "Huawei ICT Academy", date: "2026", pdf: "HCIA-AI V4.0 Course.pdf" },
             { name: "HCIA-Cloud Computing V5.5 Course: Cloud Computing Technologies and Virtualization", issuer: "Huawei ICT Academy", date: "Nisan 2026", pdf: "HCIA-Cloud Computing V5.5 Course.pdf" },
             { name: "HCCDA-Tech Essentials Course: Cloud Developer and Fundamental Technology Essentials", issuer: "Huawei ICT Academy", date: "Nisan 2026", pdf: "HCCDA-Tech Essentials Course.pdf" },
