@@ -1,64 +1,72 @@
 const PORTFOLIO_DATA = {
     tr: {
         tag: "Bilgisayar Mühendisi",
-        bio: "Ankara Üniversitesi Bilgisayar Mühendisliği eğitimim boyunca Python, Java, C ve SQL üzerinde güçlü bir temel oluşturdum; veri yapıları, algoritmalar, makine öğrenmesi, yapay zekâ, veri analitiği ve yazılım mimarisi alanlarında hem teorik hem de uygulamalı çalışmalar gerçekleştirdim.\n" + 
+        bio: "Ankara Üniversitesi Bilgisayar Mühendisliği eğitimim boyunca Python, Java, C ve SQL üzerinde güçlü bir temel oluşturdum; veri yapıları, algoritmalar, makine öğrenmesi, yapay zekâ, veri analitiği ve yazılım mimarisi alanlarında hem teorik hem de uygulamalı çalışmalar gerçekleştirdim.\n" +
             "Hedefim, analitik düşünme ve problem çözme becerilerimi kullanarak savunma sanayii için katma değer üretmektir. ",
-        
+
         splashBio: "Ankara Üniversitesi Bilgisayar Mühendisliği eğitimim ve projelerimle, savunma sanayiinde yerli ve milli teknolojiler geliştirmeye odaklanan bir mühendis adayıyım.",
         nav: { home: "ANASAYFA", projects: "Projeler", certs: "Sertifikalar", exp: "Deneyimler" },
         titles: { homeProj: "Son Projeler", homeCert: "Son Sertifikalar", homeEdu: "Eğitim", homeExp: "Son Deneyimler", fullProj: "Tüm Projeler", fullCerts: "Tüm Sertifikalar", fullExp: "Tüm Deneyimler" },
         btns: { unlock: "Beni Tanı", contact: "İletişime Geç", cv: "CV İndir", download: "PDF İNDİR" },
-        cvFile: "cv Türkçe 02.04.2026.pdf",
+        cvFile: "cv Türkçe 06.05.2026.pdf",
         projects: [
             {
                 title: "Havacılıkta Yapay Zekâ TEKNOFEST Yarışması",
                 shortDesc: "Takım Kaptanı, Ocak 2026 - Devam Ediyor",
                 longDesc: "Ekip koordinasyonu ve model geliştirme süreçlerine liderlik edilmektedir.",
-                tech: ["Python", "Makine Öğrenmesi", "Takım Liderliği"]
+                tech: ["Python", "Makine Öğrenmesi", "Takım Liderliği"],
+                links: ["https://github.com/AYceren11"]
             },
             {
                 title: "Madencilik Teknolojileri TEKNOFEST Yarışması",
                 shortDesc: "Üye, Ocak 2026 - Devam Ediyor",
                 longDesc: "Sensör tabanlı veri analizi ve erken uyarı sistemleri (gaz yoğunluğu risk tespiti) üzerinde çalışılmaktadır.",
-                tech: ["Python", "Veri Analizi", "Sensörler"]
+                tech: ["Python", "Veri Analizi", "Sensörler"],
+                links: ["https://github.com/AYceren11"]
             },
             {
                 title: "Yapay Zekâ Destekli Kan Tahlili Analizi TÜBİTAK 2209-A prototipi",
                 shortDesc: "Proje Sahibi ve Yürütücü, Eylül 2025 - Devam Ediyor",
                 longDesc: "Doğal Dil İşleme ve makine öğrenmesi yöntemleri ile %85 üzeri doğruluk sağlanmıştır.",
-                tech: ["Python", "NLP", "Makine Öğrenmesi"]
+                tech: ["Python", "NLP", "Makine Öğrenmesi"],
+                links: ["https://github.com/AYceren11"]
             }
-            ],
+        ],
         experience: [
             {
                 role: "Yapay Zeka Birimi Stajyeri",
                 company: "T.C. Cumhurbaşkanlığı İletişim Başkanlığı",
                 date: "Nisan 2026 - Devam Ediyor",
-                details: "Yapay zekanın mevcut sistemlere ve iş akışlarına entegrasyonu üzerine çalışılmaktadır. Yapay zeka odaklı çözümlerin geliştirilmesi ve uygulanmasına destek olunmaktadır."
+                details: "Yapay zekanın mevcut sistemlere ve iş akışlarına entegrasyonu üzerine çalışılmaktadır. Yapay zeka odaklı çözümlerin geliştirilmesi ve uygulanmasına destek olunmaktadır.",
+                links: ["https://www.iletisim.gov.tr/"]
             },
             {
                 role: "Yazılım Geliştirme Stajyeri",
                 company: "Uçak Yazılım",
                 date: "Ocak 2026 - Şubat 2026",
-                details: "Finans ve İK veri setleri için makine öğrenmesi tabanlı karar destek sistemi geliştirilmiştir. Flask tabanlı web uygulaması ile otomatik özellik çıkarımı ve PDF rapor üretimi sağlanmıştır. Doğrusal ve Lojistik Regresyon ile %91 doğruluk elde edilmiştir. Ollama3 (LLM) entegrasyonu ile model çıktıları yorumlanmıştır."
+                details: "Finans ve İK veri setleri için makine öğrenmesi tabanlı karar destek sistemi geliştirilmiştir. Flask tabanlı web uygulaması ile otomatik özellik çıkarımı ve PDF rapor üretimi sağlanmıştır. Doğrusal ve Lojistik Regresyon ile %91 doğruluk elde edilmiştir. Ollama3 (LLM) entegrasyonu ile model çıktıları yorumlanmıştır.",
+                links: ["https://github.com/AYceren11"]
             },
             {
                 role: "Sosyal Medya Elçisi",
                 company: "HSD Ankara",
                 date: "Şubat 2026 - Devam Ediyor",
-                details: "Topluluk hesaplarının yönetimi ve içerik stratejisi yürütülmektedir."
+                details: "Topluluk hesaplarının yönetimi ve içerik stratejisi yürütülmektedir.",
+                links: ["https://github.com/AYceren11"]
             },
             {
                 role: "Yazman",
                 company: "HSD Ankara",
                 date: "Eylül 2025 - Şubat 2026",
-                details: "Dokümantasyon ve topluluk içi iletişim süreçlerinden sorumludur."
+                details: "Dokümantasyon ve topluluk içi iletişim süreçlerinden sorumludur.",
+                links: ["https://github.com/AYceren11"]
             },
             {
                 role: "Organizasyon ve Prime Ekip Sorumlusu",
                 company: "HSD Ankara",
                 date: "Mart 2025 - Kasım 2025",
-                details: "Etkinlik planlama ve ekip koordinasyonu sağlanmıştır."
+                details: "Etkinlik planlama ve ekip koordinasyonu sağlanmıştır.",
+                links: ["https://github.com/AYceren11"]
             }
         ],
         education: [
@@ -87,57 +95,65 @@ const PORTFOLIO_DATA = {
         nav: { home: "HOME", projects: "Projects", certs: "Certificates", exp: "Experiences" },
         titles: { homeProj: "Recent Projects", homeCert: "Recent Certificates", homeEdu: "Education", homeExp: "Recent Experiences", fullProj: "All Projects", fullCerts: "All Certificates", fullExp: "All Experiences" },
         btns: { unlock: "Know Me", contact: "Contact Me", cv: "Download CV", download: "DOWNLOAD PDF" },
-        cvFile: "cv English 02.04.2026.pdf",
+        cvFile: "cv English 06.05.2026.pdf",
         projects: [
             {
                 title: "AI in Aviation TEKNOFEST Competition",
                 shortDesc: "Team Leader, January 2026 - Present",
                 longDesc: "Leading team coordination and model development processes.",
-                tech: ["Python", "Machine Learning", "Team Leadership"]
+                tech: ["Python", "Machine Learning", "Team Leadership"],
+                links: ["https://github.com/AYceren11"]
             },
             {
                 title: "Mining Technologies TEKNOFESTCompetition",
                 shortDesc: "Member, January 2026 - Present",
                 longDesc: "Working on sensor-based data analysis and early warning systems (gas density risk detection).",
-                tech: ["Python", "Data Analysis", "Sensors"]
+                tech: ["Python", "Data Analysis", "Sensors"],
+                links: ["https://github.com/AYceren11"]
             },
             {
                 title: "AI-Powered Blood Test Analysis TÜBİTAK 2209-A prototype",
                 shortDesc: "Project Owner and Lead, September 2025 - Present",
                 longDesc: "Developed using NLP and machine learning with >85% accuracy.",
-                tech: ["Python", "NLP", "Machine Learning"]
+                tech: ["Python", "NLP", "Machine Learning"],
+                links: ["https://github.com/AYceren11"]
             }
-            ],
+        ],
         experience: [
             {
                 role: "Artificial Intelligence Unit Intern",
                 company: "Presidency of the Republic of Türkiye Directorate of Communications",
                 date: "Apr 2026 - Present",
-                details: "Working on the integration of artificial intelligence into existing systems and workflows. Assisting in the development and implementation of AI-driven solutions."
+                details: "Working on the integration of artificial intelligence into existing systems and workflows. Assisting in the development and implementation of AI-driven solutions.",
+                links: ["https://www.iletisim.gov.tr/"]
             },
             {
                 role: "Software Development Intern",
                 company: "Uçak Software",
                 date: "January 2026 - February 2026",
-                details: "Developed an ML-based decision support system for finance and HR datasets. Built Flask web app with automatic feature extraction and PDF reports. Achieved 91% accuracy with Linear & Logistic Regression. Integrated Ollama3 (LLM) for model output interpretation."
+                details: "Developed an ML-based decision support system for finance and HR datasets. Built Flask web app with automatic feature extraction and PDF reports. Achieved 91% accuracy with Linear & Logistic Regression. Integrated Ollama3 (LLM) for model output interpretation.",
+                links: ["https://github.com/AYceren11"]
             },
             {
                 role: "Social Media Ambassador",
                 company: "HSD Ankara",
                 date: "February 2026 - Present",
-                details: "Managing community accounts and content strategy."
+                details: "Managing community accounts and content strategy.",
+                links: ["https://github.com/AYceren11"]
             },
             {
                 role: "Secretary",
                 company: "HSD Ankara",
                 date: "September 2025 - February 2026",
-                details: "Responsible for documentation and internal communications."
+                details: "Responsible for documentation and internal communications.",
+                links: ["https://github.com/AYceren11"]
             },
             {
                 role: "Organization & Prime Team Lead",
                 company: "HSD Ankara",
                 date: "March 2025 - November 2025",
-                details: "Event planning and team coordination."
+                details: "Event planning and team coordination.",
+                links: ["https://github.com/AYceren11"]
             }
         ],
         education: [
@@ -156,7 +172,7 @@ const PORTFOLIO_DATA = {
             { name: "Network Fundamentals", issuer: "BTK Academy", date: "2025", pdf: "BTK Ağ Temelleri.pdf" },
             { name: "Ethical Hacking Bootcamp", issuer: "Udemy", date: "2025", pdf: "Udemy Ethical Hacking.pdf" },
             { name: "Algorithm 101 Training", issuer: "AUCS", date: "2023", pdf: "AUCS Algoritma 101.pdf" }
-            
+
         ]
     }
 };
@@ -164,6 +180,20 @@ const PORTFOLIO_DATA = {
 let currentLang = 'tr';
 const GITHUB_URL = "https://github.com/AYceren11";
 const LINKEDIN_URL = "https://www.linkedin.com/in/ayşecerenşenel";
+
+function openLinks(links) {
+    if (!links || links.length === 0) return;
+    links.forEach(link => window.open(link, '_blank'));
+}
+
+function downloadFile(filePath) {
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.download = filePath;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
 
 function toggleDarkMode() {
     document.documentElement.classList.toggle('dark');
@@ -203,7 +233,7 @@ function renderDynamicContent() {
     document.getElementById('home-proj-feed').innerHTML = data.projects
         .slice(0, 4)
         .map(p => `
-            <div class="summary-card shadow-sm">
+            <div class="summary-card interactive-card shadow-sm" onclick="openLinks(${JSON.stringify(p.links).replace(/"/g, "'")})">
                 <p class="font-bold text-sm text-peach-600">${p.title}</p>
                 <p class="text-[10px] opacity-60">${p.shortDesc}</p>
             </div>
@@ -213,7 +243,7 @@ function renderDynamicContent() {
     document.getElementById('home-cert-feed').innerHTML = data.certs
         .slice(0, 4)
         .map(c => `
-            <div class="summary-card shadow-sm">
+            <div class="summary-card interactive-card shadow-sm" onclick="downloadFile('${c.pdf}')">
                 <p class="font-bold text-sm text-peach-600">${c.name}</p>
                 <p class="text-[10px] font-bold uppercase opacity-60">${c.issuer}</p>
             </div>
@@ -230,7 +260,7 @@ function renderDynamicContent() {
     // Deneyim (en üstteki 4)
     document.getElementById('home-exp-feed').innerHTML = data.experience
         .slice(0, 4)
-        .map(exp => `<div class="summary-card shadow-sm">
+        .map(exp => `<div class="summary-card interactive-card shadow-sm" onclick="openLinks(${JSON.stringify(exp.links).replace(/"/g, "'")})">
             <p class="font-bold text-sm text-peach-600">${exp.company}</p>
             <p class="text-[10px] opacity-60">${exp.role} | ${exp.date}</p>
         </div>
@@ -239,7 +269,7 @@ function renderDynamicContent() {
     // Tüm Projeler
     document.getElementById('full-projects-list').innerHTML = data.projects
         .map(p => `
-            <div class="bg-white dark:bg-zinc-900 p-8 rounded-[2.5rem] border border-peach-100 dark:border-zinc-800 shadow-xl card-hover">
+            <div class="bg-white dark:bg-zinc-900 p-8 rounded-[2.5rem] border border-peach-100 dark:border-zinc-800 shadow-xl interactive-card" onclick="openLinks(${JSON.stringify(p.links).replace(/"/g, "'")})">
                 <h3 class="text-2xl font-black mb-4 dark:text-white">${p.title}</h3>
                 <p class="opacity-70 text-sm mb-6">${p.longDesc}</p>
                 <div class="flex gap-2">
@@ -265,7 +295,7 @@ function renderDynamicContent() {
     // Tüm Deneyimler
     document.getElementById('full-experience-list').innerHTML = data.experience
         .map(e => `
-            <div class="relative pl-10 border-l-2 border-peach-200 dark:border-zinc-800 mb-10">
+            <div class="relative pl-10 border-l-2 border-peach-200 dark:border-zinc-800 mb-10 interactive-card" onclick="openLinks(${JSON.stringify(e.links).replace(/"/g, "'")})">
                 <h3 class="text-xl font-black dark:text-white">${e.role}</h3>
                 <p class="text-peach-500 font-bold text-xs uppercase mb-2">${e.company} | ${e.date}</p>
                 <p class="opacity-70 text-sm">${e.details}</p>
