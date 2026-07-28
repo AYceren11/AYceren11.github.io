@@ -9,8 +9,15 @@ const PORTFOLIO_DATA = {
         titles: { homeProj: "Son Projeler", homeCert: "Son Sertifikalar", homeEdu: "Eğitim", homeExp: "Son Deneyimler", fullProj: "Tüm Projeler", fullCerts: "Tüm Sertifikalar", fullExp: "Tüm Deneyimler" },
         btns: { unlock: "Beni Tanı", contact: "İletişime Geç", cv: "CV İndir", download: "PDF İNDİR" },
         messages: { popupWarning: "Lütfen tüm bağlantıların açılması için tarayıcınızda pop-uplara izin verin." },
-        cvFile: "cv Türkçe 06.05.2026.pdf",
+        cvFile: "cv Türkçe 27.07.2026.pdf",
         projects: [
+            {
+                title: "OTUSAT - Küp Uydu (CubeSat) Projesi",
+                shortDesc: "Gönüllü Araştırmacı / Yazılım Geliştirici, Mayıs 2026 - Devam Ediyor",
+                longDesc: "Küp uydu ile yer istasyonu arasındaki RF haberleşme protokolleri (TM/TC) ile uydu alt sistemleri arasındaki seri haberleşme (UART, SPI, I2C) mimarileri ve güvenilir veri iletim algoritmaları geliştirilmektedir.",
+                tech: ["RF Telemetri", "Gömülü Sistemler", "UART/SPI/I2C"],
+                links: ["https://otu1sat.github.io/"]
+            },
             {
                 title: "Havacılıkta Yapay Zekâ TEKNOFEST Yarışması",
                 shortDesc: "Takım Kaptanı, Ocak 2026 - Devam Ediyor",
@@ -24,21 +31,28 @@ const PORTFOLIO_DATA = {
                 longDesc: "Sensör tabanlı veri analizi ve erken uyarı sistemleri (gaz yoğunluğu risk tespiti) üzerinde çalışılmaktadır.",
                 tech: ["Python", "Veri Analizi", "Sensörler"],
                 links: []
-            },
-            {
-                title: "Yapay Zekâ Destekli Kan Tahlili Analizi TÜBİTAK 2209-A prototipi",
-                shortDesc: "Proje Sahibi ve Yürütücü, Eylül 2025 - Devam Ediyor",
-                longDesc: "Doğal Dil İşleme ve makine öğrenmesi yöntemleri ile %85 üzeri doğruluk sağlanmıştır.",
-                tech: ["Python", "NLP", "Makine Öğrenmesi"],
-                links: []
             }
         ],
         experience: [
             {
+                role: "Araştırma ve Yazılım Geliştirme Stajyeri",
+                company: "Boğaziçi Üniversitesi - MIMLab (Multimodal Imaging & Mind Lab)",
+                date: "Temmuz 2026 - Devam Ediyor",
+                details: "MimPhy projesi kapsamında eşzamanlı EEG-fMRI ve çok katmanlı ağ analizleriyle bilişsel süreçlerin ve fizyolojik dinamiklerin incelenmesi üzerine çalışılmaktadır. Çok modlu nörofizyolojik verilerin ön işlenmesi, gürültü arındırma, öznitelik çıkarımı, ML modellerinin geliştirilmesi, veri boru hatlarının kurulması ve zaman-frekans analizi süreçleri yürütülmektedir. (Teknolojiler: Simultaneous EEG-fMRI, Signal Processing, Machine Learning, Feature Extraction, Preprocessing, Pipeline Development, Python, MATLAB)",
+                links: ["https://mimlab.bogazici.edu.tr/interns-research-volunteers"]
+            },
+            {
+                role: "Yazılım Geliştirme Stajyeri (Uzaktan)",
+                company: "Microsoft",
+                date: "Temmuz 2026 - Devam Ediyor",
+                details: "Quantum Kickstart Programı kapsamında Azure Quantum ve Q# dili kullanılarak kübit manipülasyonu, süperpozisyon ve dolaşıklık (entanglement) ilkelerine dayalı kuantum algoritmaları geliştirilmekte ve simüle edilmektedir. Klasik ve kuantum hesaplama arasındaki hibrit sistem mimarileri analiz edilerek modern kuantum SDK'ları ile problem çözme süreçleri yürütülmektedir. (Teknolojiler: Q#, Azure Quantum, QDK, Python, Jupyter Notebooks)",
+                links: []
+            },
+            {
                 role: "Yapay Zeka Birimi Stajyeri",
                 company: "T.C. Cumhurbaşkanlığı İletişim Başkanlığı",
-                date: "Nisan 2026 - Devam Ediyor",
-                details: "Yapay zekanın mevcut sistemlere ve iş akışlarına entegrasyonu üzerine çalışılmaktadır. Yapay zeka odaklı çözümlerin geliştirilmesi ve uygulanmasına destek olunmaktadır.",
+                date: "Nisan 2026 - Haziran 2026",
+                details: "Kamu evrak sistemlerinin NIST standartlarındaki PQC algoritmalarına taşınması, benchmark analizleri ve kurumsal Sıfır Güven (Zero Trust) strateji raporunun hazırlanması gerçekleştirilmiştir. Mevzuat verileriyle ChromaDB tabanlı RAG mimarisi kurgulanmış, UYAP SOAP servisleri entegre edilmiştir. Telegram üzerinden Telethon ile veri toplanarak BERT ve NetworkX ile trend/etkileşim analizi yapılmış; TurkishBERT/Zemberek kullanılarak siber-psiko duygu durumu analizi algoritmaları geliştirilmiştir. (Teknolojiler: Python, TypeScript, Next.js, React, FastAPI, Node.js, MSSQL, ChromaDB, PQC, liboqs, BERT, Docker, Git)",
                 links: [
                     "https://github.com/AYceren11/Cyber-Psycho-Analysis-System",
                     "https://github.com/AYceren11/tg-intel-platform",
@@ -79,10 +93,13 @@ const PORTFOLIO_DATA = {
             }
         ],
         education: [
-            { school: "Ankara Üniversitesi", degree: "Bilgisayar Mühendisliği", date: "2023 - Devam", grade: "GNO: 2.91" },
+            { school: "Ankara Üniversitesi", degree: "Bilgisayar Mühendisliği", date: "2023 - Devam", grade: "GNO: 3.30" },
             { school: "Meram Anadolu Lisesi", degree: "Lise Mezuniyeti", date: "2018 - 2022", grade: "Not: 96.69" }
         ],
         certs: [
+            { name: "Savunma Sanayii 401 Programı Başarı Sertifikası", issuer: "Savunma Sanayii Akademi / SSB & YÖK", date: "17 Haziran 2026", pdf: "savunma-sanayii-akademi-sertifika-sorgulama.pdf", desc: "Savunma Sanayii Başkanlığı ve Yükseköğretim Kurulu iş birliğiyle düzenlenen Savunma Sanayii 401 eğitimini başarıyla ve AA derecesiyle tamamlama belgesi." },
+            { name: "DİKKAT Akademi — Dijital İstihbarata Karşı Koyma Atölyesi", issuer: "T.C. Cumhurbaşkanlığı İletişim Başkanlığı", date: "13 Mayıs 2026", pdf: "dikkat-sertifika-DKKT-7FKRVL-N0PJ.pdf", desc: "Dijital istihbarat, bilgi güvenliği ve tehdit analizi konularını kapsayan eğitim programı." },
+            { name: "Profesyonel Hayata Giriş Sertifikası (GNÇYTNK)", issuer: "Turkcell Akademi", date: "2026", pdf: "Turkcell GNÇYTNK’26 Gelişim Rotası Sertifikası Ayşe Ceren Şenel.pdf", desc: "Turkcell Akademi tarafından GNÇYTNK Programı kapsamında gerçekleştirilen canlı yayın ve asenkron eğitimleri başarıyla tamamlama belgesi." },
             { name: "Güdüm Sistemleri Speed Bootcamp", issuer: "Aselsan", date: "11 Nisan 2026", pdf: "güdümlü-sist-sertifika.pdf", desc: "Güdüm sistemleri üzerine yoğunlaştırılmış teknik eğitim programı." },
             { name: "HCIA-AI V4.0 Course: Yapay Zeka Temelleri ve Uygulamaları", issuer: "Huawei ICT Academy", date: "2026", pdf: "HCIA-AI V4.0 Course.pdf", desc: "Yapay zeka temelleri ve Huawei ekosistemindeki AI uygulamaları üzerine kapsamlı eğitim." },
             { name: "HCIA-Cloud Computing V5.5 Course: Bulut Bilişim Teknolojileri ve Sanallaştırma", issuer: "Huawei ICT Academy", date: "2026", pdf: "HCIA-Cloud Computing V5.5 Course.pdf", desc: "Bulut bilişim mimarisi ve sanallaştırma teknolojileri üzerine yetkinlik sertifikası." },
@@ -105,8 +122,15 @@ const PORTFOLIO_DATA = {
         titles: { homeProj: "Recent Projects", homeCert: "Recent Certificates", homeEdu: "Education", homeExp: "Recent Experiences", fullProj: "All Projects", fullCerts: "All Certificates", fullExp: "All Experiences" },
         btns: { unlock: "Know Me", contact: "Contact Me", cv: "Download CV", download: "DOWNLOAD PDF" },
         messages: { popupWarning: "Please allow pop-ups in your browser to open all links." },
-        cvFile: "cv English 06.05.2026.pdf",
+        cvFile: "cv English 27.07.2026.pdf",
         projects: [
+            {
+                title: "OTUSAT - CubeSat Project",
+                shortDesc: "Volunteer Researcher / Software Developer, May 2026 - Present",
+                longDesc: "Designing RF communication protocols, telemetry (TM), and telecommand (TC) packet structures between the CubeSat and the ground station, as well as serial communication (UART, SPI, I2C) architectures and reliable data transmission algorithms among satellite subsystems.",
+                tech: ["RF Comm", "Embedded Systems", "UART/SPI/I2C"],
+                links: ["https://otu1sat.github.io/"]
+            },
             {
                 title: "AI in Aviation TEKNOFEST Competition",
                 shortDesc: "Team Leader, January 2026 - Present",
@@ -120,21 +144,28 @@ const PORTFOLIO_DATA = {
                 longDesc: "Working on sensor-based data analysis and early warning systems (gas density risk detection).",
                 tech: ["Python", "Data Analysis", "Sensors"],
                 links: []
-            },
-            {
-                title: "AI-Powered Blood Test Analysis TÜBİTAK 2209-A prototype",
-                shortDesc: "Project Owner and Lead, September 2025 - Present",
-                longDesc: "Developed using NLP and machine learning with >85% accuracy.",
-                tech: ["Python", "NLP", "Machine Learning"],
-                links: []
             }
         ],
         experience: [
             {
+                role: "Research and Software Development Intern",
+                company: "Boğaziçi University - MIMLab (Multimodal Imaging & Mind Lab)",
+                date: "July 2026 - Present",
+                details: "Working on the MimPhy project investigating cognitive processes and physiological dynamics via simultaneous EEG-fMRI and multilayer network analysis. Undertaking preprocessing of multimodal neurophysiological data, denoising, feature extraction, developing ML models, building automated data pipelines, and time-frequency network analysis. (Technologies: Simultaneous EEG-fMRI, Signal Processing, Machine Learning, Feature Extraction, Preprocessing, Pipeline Development, Python, MATLAB)",
+                links: ["https://mimlab.bogazici.edu.tr/interns-research-volunteers"]
+            },
+            {
+                role: "Software Development Intern (Remote)",
+                company: "Microsoft",
+                date: "July 2026 - Present",
+                details: "Coded and simulated quantum algorithms based on qubit manipulation, superposition, and entanglement principles using Azure Quantum and Q# within the Quantum Kickstart Program. Analyzed hybrid classical-quantum computing architectures and worked with modern quantum SDKs. (Technologies: Q#, Azure Quantum, QDK, Python, Jupyter Notebooks)",
+                links: []
+            },
+            {
                 role: "Artificial Intelligence Unit Intern",
                 company: "Presidency of the Republic of Türkiye Directorate of Communications",
-                date: "Apr 2026 - Present",
-                details: "Working on the integration of artificial intelligence into existing systems and workflows. Assisting in the development and implementation of AI-driven solutions.",
+                date: "Apr 2026 - June 2026",
+                details: "Migrated public document systems to NIST PQC algorithms (ML-KEM, ML-DSA), performed benchmark analyses, and authored corporate Zero Trust strategy reports. Designed ChromaDB-based RAG architecture and integrated UYAP SOAP services for decision support. Collected Telegram data using Telethon and conducted trend/network analysis using BERT and NetworkX. Developed siber-psycho analysis text algorithms using TurkishBERT and Zemberek. (Technologies: Python, TypeScript, Next.js, React, FastAPI, Node.js, MSSQL, ChromaDB, PQC, liboqs, BERT, Docker, Git)",
                 links: [
                     "https://github.com/AYceren11/Cyber-Psycho-Analysis-System",
                     "https://github.com/AYceren11/tg-intel-platform",
@@ -175,10 +206,13 @@ const PORTFOLIO_DATA = {
             }
         ],
         education: [
-            { school: "Ankara University", degree: "Computer Engineering", date: "2023 - Present", grade: "GPA: 2.91" },
+            { school: "Ankara University", degree: "Computer Engineering", date: "2023 - Present", grade: "GPA: 3.30" },
             { school: "High School", degree: "Meram Anatolian High School", date: "2018 - 2022", grade: "GPA: 96.69" }
         ],
         certs: [
+            { name: "Defense Industry 401 Program Certificate of Achievement", issuer: "SSB & YÖK", date: "June 17, 2026", pdf: "savunma-sanayii-akademi-sertifika-sorgulama.pdf", desc: "Certificate of successfully completing the Defense Industry 401 course with an AA grade, organized in cooperation with SSB and YÖK." },
+            { name: "DIKKAT Academy — Digital Counter-Intelligence Workshop", issuer: "Presidency of the Republic of Türkiye Directorate of Communications", date: "May 13, 2026", pdf: "dikkat-sertifika-DKKT-7FKRVL-N0PJ.pdf", desc: "Workshop training program covering digital intelligence, information security, and threat analysis." },
+            { name: "Introduction to Professional Life Certificate (GNÇYTNK)", issuer: "Turkcell Academy", date: "2026", pdf: "Turkcell GNÇYTNK’26 Gelişim Rotası Sertifikası Ayşe Ceren Şenel.pdf", desc: "Certificate of successfully completing live broadcast and asynchronous training within the scope of the GNÇYTNK Program by Turkcell Academy." },
             { name: "Guidance Systems Speed Bootcamp", issuer: "Aselsan", date: "April 11, 2026", pdf: "güdümlü-sist-sertifika.pdf", desc: "Intensive technical training program on guidance systems." },
             { name: "HCIA-AI V4.0 Course: Fundamentals and Applications of Artificial Intelligence", issuer: "Huawei ICT Academy", date: "2026", pdf: "HCIA-AI V4.0 Course.pdf", desc: "Comprehensive training on AI fundamentals and applications within the Huawei ecosystem." },
             { name: "HCIA-Cloud Computing V5.5 Course: Cloud Computing Technologies and Virtualization", issuer: "Huawei ICT Academy", date: "Nisan 2026", pdf: "HCIA-Cloud Computing V5.5 Course.pdf", desc: "Certification on cloud computing architecture and virtualization technologies." },
