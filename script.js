@@ -9,7 +9,7 @@ const PORTFOLIO_DATA = {
         titles: { homeProj: "Son Projeler", homeCert: "Son Sertifikalar", homeEdu: "Eğitim", homeExp: "Son Deneyimler", fullProj: "Tüm Projeler", fullCerts: "Tüm Sertifikalar", fullExp: "Tüm Deneyimler" },
         btns: { unlock: "Beni Tanı", contact: "İletişime Geç", cv: "CV İndir", download: "PDF İNDİR" },
         messages: { popupWarning: "Lütfen tüm bağlantıların açılması için tarayıcınızda pop-uplara izin verin." },
-        cvFile: "cv Türkçe 27.07.2026.pdf",
+        cvFile: "cv türkçe 05.08.2026.pdf",
         projects: [
             {
                 title: "OTUSAT - Küp Uydu (CubeSat) Projesi",
@@ -110,7 +110,8 @@ const PORTFOLIO_DATA = {
             { name: "Doğal Dil İşleme", issuer: "BTK Akademi", date: "2025", pdf: "BTK Doğa Dil İşleme.pdf", desc: "Metin analizi ve dil modelleri geliştirme üzerine uygulama odaklı NLP eğitimi." },
             { name: "Ağ Temelleri", issuer: "BTK Akademi", date: "2025", pdf: "BTK Ağ Temelleri.pdf", desc: "Bilgisayar ağları katmanları, protokoller ve temel ağ güvenliği prensipleri eğitimi." },
             { name: "Ethical Hacking Bootcamp", issuer: "Udemy", date: "2025", pdf: "Udemy Ethical Hacking.pdf", desc: "Siber güvenlik temelleri ve etik hackleme yöntemleri üzerine kapsamlı eğitim." },
-            { name: "Algoritma 101", issuer: "AUCS", date: "2023", pdf: "AUCS Algoritma 101.pdf", desc: "Veri yapıları ve algoritma tasarım prensipleri üzerine temel yetkinlik eğitimi." }
+            { name: "Algoritma 101", issuer: "AUCS", date: "2023", pdf: "AUCS Algoritma 101.pdf", desc: "Veri yapıları ve algoritma tasarım prensipleri üzerine temel yetkinlik eğitimi." },
+            { name: "Almanca Eğitimi (A1-A2) Başarı Sertifikası", issuer: "IIENSTITU", date: "20 Ekim 2019", pdf: "AlmancaA1-A2.pdf", desc: "IIENSTITU tarafından düzenlenen 30 saatlik Almanca Eğitimi (A1-A2) programını ve başarı sınavını tamamlayarak alınan başarı belgesi." }
         ]
     },
     en: {
@@ -122,7 +123,7 @@ const PORTFOLIO_DATA = {
         titles: { homeProj: "Recent Projects", homeCert: "Recent Certificates", homeEdu: "Education", homeExp: "Recent Experiences", fullProj: "All Projects", fullCerts: "All Certificates", fullExp: "All Experiences" },
         btns: { unlock: "Know Me", contact: "Contact Me", cv: "Download CV", download: "DOWNLOAD PDF" },
         messages: { popupWarning: "Please allow pop-ups in your browser to open all links." },
-        cvFile: "cv English 27.07.2026.pdf",
+        cvFile: "cv english 05.08.2026.pdf",
         projects: [
             {
                 title: "OTUSAT - CubeSat Project",
@@ -223,7 +224,8 @@ const PORTFOLIO_DATA = {
             { name: "Natural Language Processing", issuer: "BTK Academy", date: "2025", pdf: "BTK Doğa Dil İşleme.pdf", desc: "Applied NLP training on text analysis and language model development." },
             { name: "Network Fundamentals", issuer: "BTK Academy", date: "2025", pdf: "BTK Ağ Temelleri.pdf", desc: "Training on computer network layers, protocols, and network security basics." },
             { name: "Ethical Hacking Bootcamp", issuer: "Udemy", date: "2025", pdf: "Udemy Ethical Hacking.pdf", desc: "Comprehensive training on cybersecurity fundamentals and ethical hacking." },
-            { name: "Algorithm 101 Training", issuer: "AUCS", date: "2023", pdf: "AUCS Algoritma 101.pdf", desc: "Fundamental competency training on data structures and algorithm design principles." }
+            { name: "Algorithm 101 Training", issuer: "AUCS", date: "2023", pdf: "AUCS Algoritma 101.pdf", desc: "Fundamental competency training on data structures and algorithm design principles." },
+            { name: "German Language Training (A1-A2) Certificate of Achievement", issuer: "IIENSTITU", date: "October 20, 2019", pdf: "AlmancaA1-A2.pdf", desc: "Certificate of achievement for successfully completing the 30-hour German Language Training (A1-A2) program and passing the examination, organized by IIENSTITU." }
         ]
     }
 };
